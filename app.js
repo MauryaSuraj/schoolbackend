@@ -15,6 +15,7 @@ mongoose.connect('mongodb+srv://surajmaurya:'+ process.env.MONGO_ATLAS_PW +'@nod
   useNewUrlParser : true
 });
 
+mongoose.Promise = global.Promise;
 
 // logger middleware
 app.use(morgan('dev'));
